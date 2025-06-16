@@ -2,40 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saints Academy</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
-      background: #fefefe;
-      margin: 2rem;
-      line-height: 1.6;
+      font-family: Georgia, serif;
+      background-color: #ffffff;
+      margin: 40px;
     }
     h1 {
-      color: #2b2b2b;
+      font-size: 28px;
+      margin-bottom: 16px;
     }
-    .group {
-      margin-bottom: 1.5rem;
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
     }
-    .group h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.3rem;
+    h2 img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
     }
-    .group button {
-      background: #4d8845;
-      border: none;
-      padding: 0.4rem 0.8rem;
-      color: white;
-      border-radius: 4px;
+    p {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    button {
+      font-family: inherit;
+      font-size: 14px;
+      padding: 6px 12px;
+      margin-bottom: 24px;
       cursor: pointer;
-    }
-    .group button:disabled {
-      background: #ccc;
-      cursor: not-allowed;
-    }
-    .icon {
-      font-size: 1.2rem;
-      margin-right: 0.3rem;
     }
   </style>
 </head>
@@ -43,34 +43,24 @@
   <h1>Saints Academy</h1>
   <p>Pick your path and explore a free Week 1 preview for each group below.</p>
 
-  <div class="group">
-    <h2><span class="icon">🔥</span>Lightbearers (Ages 6–7)</h2>
-    <p>Learning God’s Mercy and Forgiveness</p>
-    <button onclick="location.href='/lightbearers'">📖 Preview Week 1</button>
-  </div>
+  <h2><img src="/images/lightbearers.png" alt="Lightbearers Emblem" />Lightbearers (Ages 6–7)</h2>
+  <p>Learning God’s Mercy and Forgiveness</p>
+  <button onclick="location.href='/lightbearers/'">🔍 Preview Week 1</button>
 
-  <div class="group">
-    <h2><span class="icon">🍞</span>Feastbearers (Ages 7–8)</h2>
-    <p>Receiving Jesus in the Eucharist</p>
-    <button disabled>📖 Preview Week 1</button>
-  </div>
+  <h2><img src="/images/feastbearers.png" alt="Feastbearers Emblem" />Feastbearers (Ages 7–8)</h2>
+  <p>Receiving Jesus in the Eucharist</p>
+  <button onclick="location.href='/feastbearers/'">🔍 Preview Week 1</button>
 
-  <div class="group">
-    <h2><span class="icon">👣</span>Pathbearers (Ages 9–10)</h2>
-    <p>Following God’s Call</p>
-    <button disabled>📖 Preview Week 1</button>
-  </div>
+  <h2><img src="/images/pathbearers.png" alt="Pathbearers Emblem" />Pathbearers (Ages 9–10)</h2>
+  <p>Following God’s Call</p>
+  <button onclick="location.href='/pathbearers/'">🔍 Preview Week 1</button>
 
-  <div class="group">
-    <h2><span class="icon">🛡️</span>Shieldbearers (Ages 11–13)</h2>
-    <p>Strengthened to defend the Faith</p>
-    <button disabled>📖 Preview Week 1</button>
-  </div>
+  <h2><img src="/images/shieldbearers.png" alt="Shieldbearers Emblem" />Shieldbearers (Ages 11–13)</h2>
+  <p>Strengthened to defend the Faith</p>
+  <button onclick="location.href='/shieldbearers/'">🔍 Preview Week 1</button>
 
-  <div class="group">
-    <h2><span class="icon">📘</span>Truthbearers (Ages 13+)</h2>
-    <p>Equipped to explain and share the faith</p>
-    <button disabled>Coming Soon</button>
-  </div>
+  <h2><img src="/images/truthbearers.png" alt="Truthbearers Emblem" />Truthbearers (Ages 13+)</h2>
+  <p>Equipped to explain and share the faith</p>
+  <button disabled>🚧 Coming Soon</button>
 </body>
 </html>
