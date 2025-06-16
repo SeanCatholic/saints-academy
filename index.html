@@ -4,121 +4,183 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saints Academy | CatholicismRocks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #fefefe;
       color: #333;
     }
+
     header {
+      background-color: #4d8845;
+      padding: 20px;
       text-align: center;
-      padding: 2rem 1rem;
+      color: white;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 800;
     }
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #607f5b;
-      margin-bottom: 2rem;
+
+    header p {
+      font-size: 16px;
+      margin-top: 8px;
     }
-    .academy-grid {
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .group-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
+      gap: 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
+
     .group-card {
-      background-color: #d0ecca;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      border: 2px solid #d0ecca;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #f9fdf8;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
-    .group-card:hover {
-      transform: translateY(-5px);
-    }
-    .group-title {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-    }
-    .group-age {
-      font-size: 1rem;
+
+    .group-card h3 {
+      margin-top: 10px;
+      font-size: 20px;
       color: #4d8845;
-      margin-bottom: 0.5rem;
     }
-    .group-focus {
-      font-size: 0.95rem;
-      color: #607f5b;
-      margin-bottom: 1rem;
+
+    .group-card p {
+      font-size: 14px;
+      margin: 10px 0 20px;
     }
-    .emblem {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 1rem;
-    }
-    .button-link {
-      display: inline-block;
-      padding: 0.6rem 1.2rem;
-      background-color: #4d8845;
+
+    .group-card button {
+      background-color: #607f5b;
       color: white;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
       transition: background-color 0.3s;
     }
-    .button-link:hover {
-      background-color: #3c6e38;
+
+    .group-card button:hover {
+      background-color: #4d8845;
+    }
+
+    .enroll-section {
+      background-color: #d0ecca;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .enroll-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .enroll-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .enroll-section button {
+      background-color: #4d8845;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .enroll-section button:hover {
+      background-color: #3a6d37;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transition: opacity 0.2s ease-in-out;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Saints Academy</h1>
-    <p class="subtitle">Join the journey of faith, age by age, saint by saint.</p>
+    <p>A 36-week formation journey through the lives of the saints — for every age group.</p>
   </header>
-  <section class="academy-grid">
-    <div class="group-card">
-      <img class="emblem" src="/emblems/lightbearers.svg" alt="Lightbearers Emblem">
-      <div class="group-title">The Lightbearers</div>
-      <div class="group-age">Ages 6–7</div>
-      <div class="group-focus">Learning God’s Mercy and Forgiveness</div>
-      <a href="/lightbearers" class="button-link">View Group</a>
-    </div>
-    <div class="group-card">
-      <img class="emblem" src="/emblems/feastbearers.svg" alt="Feastbearers Emblem">
-      <div class="group-title">The Feastbearers</div>
-      <div class="group-age">Ages 7–8</div>
-      <div class="group-focus">Receiving Jesus in the Eucharist</div>
-      <a href="/feastbearers" class="button-link">View Group</a>
-    </div>
-    <div class="group-card">
-      <img class="emblem" src="/emblems/pathbearers.svg" alt="Pathbearers Emblem">
-      <div class="group-title">The Pathbearers</div>
-      <div class="group-age">Ages 9–10</div>
-      <div class="group-focus">Saying 'Yes' to God's Call</div>
-      <a href="/pathbearers" class="button-link">View Group</a>
-    </div>
-    <div class="group-card">
-      <img class="emblem" src="/emblems/shieldbearers.svg" alt="Shieldbearers Emblem">
-      <div class="group-title">The Shieldbearers</div>
-      <div class="group-age">Ages 11–13</div>
-      <div class="group-focus">Strengthened by Confirmation</div>
-      <a href="/shieldbearers" class="button-link">View Group</a>
-    </div>
-    <div class="group-card">
-      <img class="emblem" src="/emblems/truthbearers.svg" alt="Truthbearers Emblem">
-      <div class="group-title">The Truthbearers</div>
-      <div class="group-age">Ages 13+</div>
-      <div class="group-focus">Explaining and Sharing the Faith</div>
-      <a href="/truthbearers" class="button-link">Coming Soon</a>
+
+  <section>
+    <h2>Pick Your Path</h2>
+    <p>Each age-based group starts with a free Week 1 preview. Unlock all 36 weeks when you enroll.</p>
+
+    <div class="group-grid">
+     <div class="group-card">
+  <h3>
+    <img src="images/lightbearers.png" alt="Lightbearers emblem: glowing flame" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+    Lightbearers (Ages 6–7)
+  </h3>
+  <p>Learning God’s Mercy and Forgiveness</p>
+  <button onclick="location.href='https://www.catholicismrocks.com/the-lightbearers'">📖 Preview Week 1</button>
+</div>
+
+   <div class="group-card">
+  <h3>
+    <img src="images/feastbearers.png" alt="Feastbearers emblem: Eucharistic cross" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+    Feastbearers (Ages 7–8)
+  </h3>
+  <p>Receiving Jesus in the Eucharist</p>
+  <button onclick="location.href='https://www.catholicismrocks.com/the-feastbearers'">📖 Preview Week 1</button>
+</div>
+
+      <div class="group-card">
+  <h3>
+    <img src="images/pathbearers.png" alt="Pathbearers emblem: footprints" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+    Pathbearers (Ages 9–10)
+  </h3>
+  <p>Saying Yes to God’s Call</p>
+  <button onclick="location.href='https://www.catholicismrocks.com/pathbearers-ages-9-10'">📖 Preview Week 1</button>
+</div>
+
+   <div class="group-card">
+  <h3>
+    <img src="images/shieldbearers.png" alt="Shieldbearers emblem: cross and flame in shield" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+    Shieldbearers (Ages 11–13)
+  </h3>
+  <p>Strengthened by Confirmation to Defend the Faith</p>
+  <button onclick="location.href='https://www.catholicismrocks.com/shieldbearers'">📖 Preview Week 1</button>
+</div>
+
+      <div class="group-card">
+        <h3>
+          <img src="images/truthbearers.png" alt="Truthbearers emblem: sword and book" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Truthbearers (Ages 13+)
+        </h3>
+        <p>Equipped to Explain and Share the Faith</p>
+        <button onclick="location.href='preview-truthbearers.html'">📖 Preview Week 1</button>
+      </div>
     </div>
   </section>
+
+  <section class="enroll-section">
+    <h2>Ready to Begin the Journey?</h2>
+    <p>Enroll once to unlock all 5 groups and the full 36-week experience.</p>
+    <button onclick="location.href='enroll.html'">✅ Enroll Now</button>
+  </section>
+
 </body>
 </html>
