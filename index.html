@@ -3,184 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saints Academy | CatholicismRocks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-
-    header {
-      background-color: #4d8845;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: 800;
-    }
-
-    header p {
-      font-size: 16px;
-      margin-top: 8px;
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .group-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .group-card {
-      border: 2px solid #d0ecca;
-      border-radius: 10px;
-      padding: 20px;
-      background-color: #f9fdf8;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    }
-
-    .group-card h3 {
-      margin-top: 10px;
-      font-size: 20px;
-      color: #4d8845;
-    }
-
-    .group-card p {
-      font-size: 14px;
-      margin: 10px 0 20px;
-    }
-
-    .group-card button {
-      background-color: #607f5b;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .group-card button:hover {
-      background-color: #4d8845;
-    }
-
-    .enroll-section {
-      background-color: #d0ecca;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .enroll-section h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .enroll-section p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .enroll-section button {
-      background-color: #4d8845;
-      color: white;
-      padding: 12px 25px;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .enroll-section button:hover {
-      background-color: #3a6d37;
-    }
-
-    button:hover {
-      opacity: 0.9;
-      transition: opacity 0.2s ease-in-out;
-      cursor: pointer;
-    }
-  </style>
+  <title>Saints Academy</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-
   <header>
     <h1>Saints Academy</h1>
-    <p>A 36-week formation journey through the lives of the saints — for every age group.</p>
+    <p>Pick your path and explore a free Week 1 preview for each group below.</p>
   </header>
 
-  <section>
-    <h2>Pick Your Path</h2>
-    <p>Each age-based group starts with a free Week 1 preview. Unlock all 36 weeks when you enroll.</p>
-
-    <div class="group-grid">
-     <div class="group-card">
-  <h3>
-    <img src="images/lightbearers.png" alt="Lightbearers emblem: glowing flame" style="height: 28px; vertical-align: middle; margin-right: 8px;">
-    Lightbearers (Ages 6–7)
-  </h3>
-  <p>Learning God’s Mercy and Forgiveness</p>
-  <button onclick="location.href='https://www.catholicismrocks.com/the-lightbearers'">📖 Preview Week 1</button>
-</div>
-
-   <div class="group-card">
-  <h3>
-    <img src="images/feastbearers.png" alt="Feastbearers emblem: Eucharistic cross" style="height: 28px; vertical-align: middle; margin-right: 8px;">
-    Feastbearers (Ages 7–8)
-  </h3>
-  <p>Receiving Jesus in the Eucharist</p>
-  <button onclick="location.href='https://www.catholicismrocks.com/the-feastbearers'">📖 Preview Week 1</button>
-</div>
-
+  <main>
+    <section class="group-grid">
       <div class="group-card">
-  <h3>
-    <img src="images/pathbearers.png" alt="Pathbearers emblem: footprints" style="height: 28px; vertical-align: middle; margin-right: 8px;">
-    Pathbearers (Ages 9–10)
-  </h3>
-  <p>Saying Yes to God’s Call</p>
-  <button onclick="location.href='https://www.catholicismrocks.com/pathbearers-ages-9-10'">📖 Preview Week 1</button>
-</div>
-
-   <div class="group-card">
-  <h3>
-    <img src="images/shieldbearers.png" alt="Shieldbearers emblem: cross and flame in shield" style="height: 28px; vertical-align: middle; margin-right: 8px;">
-    Shieldbearers (Ages 11–13)
-  </h3>
-  <p>Strengthened by Confirmation to Defend the Faith</p>
-  <button onclick="location.href='https://www.catholicismrocks.com/shieldbearers'">📖 Preview Week 1</button>
-</div>
-
-      <div class="group-card">
-        <h3>
-          <img src="images/truthbearers.png" alt="Truthbearers emblem: sword and book" style="height: 28px; vertical-align: middle; margin-right: 8px;">
-          Truthbearers (Ages 13+)
-        </h3>
-        <p>Equipped to Explain and Share the Faith</p>
-        <button onclick="location.href='preview-truthbearers.html'">📖 Preview Week 1</button>
+        <h2>
+          <img src="images/lightbearers.png" alt="Lightbearers emblem: glowing flame" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Lightbearers (Ages 6–7)
+        </h2>
+        <p>Learning God’s Mercy and Forgiveness</p>
+        <button onclick="location.href='/lightbearers/'">📘 Preview Week 1</button>
       </div>
-    </div>
-  </section>
 
-  <section class="enroll-section">
-    <h2>Ready to Begin the Journey?</h2>
-    <p>Enroll once to unlock all 5 groups and the full 36-week experience.</p>
-    <button onclick="location.href='enroll.html'">✅ Enroll Now</button>
-  </section>
+      <div class="group-card">
+        <h2>
+          <img src="images/feastbearers.png" alt="Feastbearers emblem: chalice" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Feastbearers (Ages 7–8)
+        </h2>
+        <p>Receiving Jesus in the Eucharist</p>
+        <button onclick="location.href='https://www.catholicismrocks.com/the-feastbearers'">📘 Preview Week 1</button>
+      </div>
 
+      <div class="group-card">
+        <h2>
+          <img src="images/pathbearers.png" alt="Pathbearers emblem: footprints" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Pathbearers (Ages 9–10)
+        </h2>
+        <p>Following God's Call</p>
+        <button onclick="location.href='https://www.catholicismrocks.com/pathbearers-ages-9-10'">📘 Preview Week 1</button>
+      </div>
+
+      <div class="group-card">
+        <h2>
+          <img src="images/shieldbearers.png" alt="Shieldbearers emblem: shield" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Shieldbearers (Ages 11–13)
+        </h2>
+        <p>Strengthened to defend the Faith</p>
+        <button onclick="location.href='https://www.catholicismrocks.com/shieldbearers'">📘 Preview Week 1</button>
+      </div>
+
+      <div class="group-card">
+        <h2>
+          <img src="images/truthbearers.png" alt="Truthbearers emblem: book and sword" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Truthbearers (Ages 13+)
+        </h2>
+        <p>Equipped to explain and share the faith</p>
+        <button disabled style="opacity: 0.5; cursor: not-allowed;">📘 Coming Soon</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
