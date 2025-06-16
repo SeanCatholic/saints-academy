@@ -3,102 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saints Academy</title>
+  <title>Saints Academy | CatholicismRocks</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .group {
-      margin-bottom: 2.5rem;
-    }
-    .group-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      margin-bottom: 0.3rem;
-    }
-    .group-title img {
-      width: 20px;
-      height: 20px;
-      margin-right: 0.5rem;
-    }
-    .description {
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-    .preview-button {
-      background-color: #e0e0e0;
-      border: 1px solid #ccc;
-      padding: 0.3rem 0.7rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-      border-radius: 4px;
-      text-decoration: none;
-      color: #000;
-      display: inline-block;
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #607f5b;
+      margin-bottom: 2rem;
     }
-    .preview-button:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
+    .academy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .group-card {
+      background-color: #d0ecca;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .group-card:hover {
+      transform: translateY(-5px);
+    }
+    .group-title {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .group-age {
+      font-size: 1rem;
+      color: #4d8845;
+      margin-bottom: 0.5rem;
+    }
+    .group-focus {
+      font-size: 0.95rem;
+      color: #607f5b;
+      margin-bottom: 1rem;
+    }
+    .emblem {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+    .button-link {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: #4d8845;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .button-link:hover {
+      background-color: #3c6e38;
     }
   </style>
 </head>
 <body>
-  <h1>Saints Academy</h1>
-  <p>Pick your path and explore a free Week 1 preview for each group below.</p>
-
-  <div class="group">
-    <div class="group-title">
-      <img src="/images/lightbearers.png" alt="Lightbearers emblem" />
-      Lightbearers (Ages 6–7)
+  <header>
+    <h1>Saints Academy</h1>
+    <p class="subtitle">Join the journey of faith, age by age, saint by saint.</p>
+  </header>
+  <section class="academy-grid">
+    <div class="group-card">
+      <img class="emblem" src="/emblems/lightbearers.svg" alt="Lightbearers Emblem">
+      <div class="group-title">The Lightbearers</div>
+      <div class="group-age">Ages 6–7</div>
+      <div class="group-focus">Learning God’s Mercy and Forgiveness</div>
+      <a href="/lightbearers" class="button-link">View Group</a>
     </div>
-    <div class="description">Learning God’s Mercy and Forgiveness</div>
-    <a class="preview-button" href="/lightbearers">Preview Week 1</a>
-  </div>
-
-  <div class="group">
-    <div class="group-title">
-      <img src="/images/feastbearers.png" alt="Feastbearers emblem" />
-      Feastbearers (Ages 7–8)
+    <div class="group-card">
+      <img class="emblem" src="/emblems/feastbearers.svg" alt="Feastbearers Emblem">
+      <div class="group-title">The Feastbearers</div>
+      <div class="group-age">Ages 7–8</div>
+      <div class="group-focus">Receiving Jesus in the Eucharist</div>
+      <a href="/feastbearers" class="button-link">View Group</a>
     </div>
-    <div class="description">Receiving Jesus in the Eucharist</div>
-    <a class="preview-button" href="/feastbearers">Preview Week 1</a>
-  </div>
-
-  <div class="group">
-    <div class="group-title">
-      <img src="/images/pathbearers.png" alt="Pathbearers emblem" />
-      Pathbearers (Ages 9–10)
+    <div class="group-card">
+      <img class="emblem" src="/emblems/pathbearers.svg" alt="Pathbearers Emblem">
+      <div class="group-title">The Pathbearers</div>
+      <div class="group-age">Ages 9–10</div>
+      <div class="group-focus">Saying 'Yes' to God's Call</div>
+      <a href="/pathbearers" class="button-link">View Group</a>
     </div>
-    <div class="description">Following God’s Call</div>
-    <a class="preview-button" href="/pathbearers">Preview Week 1</a>
-  </div>
-
-  <div class="group">
-    <div class="group-title">
-      <img src="/images/shieldbearers.png" alt="Shieldbearers emblem" />
-      Shieldbearers (Ages 11–13)
+    <div class="group-card">
+      <img class="emblem" src="/emblems/shieldbearers.svg" alt="Shieldbearers Emblem">
+      <div class="group-title">The Shieldbearers</div>
+      <div class="group-age">Ages 11–13</div>
+      <div class="group-focus">Strengthened by Confirmation</div>
+      <a href="/shieldbearers" class="button-link">View Group</a>
     </div>
-    <div class="description">Strengthened to defend the Faith</div>
-    <a class="preview-button" href="/shieldbearers">Preview Week 1</a>
-  </div>
-
-  <div class="group">
-    <div class="group-title">
-      <img src="/images/truthbearers.png" alt="Truthbearers emblem" />
-      Truthbearers (Ages 13+)
+    <div class="group-card">
+      <img class="emblem" src="/emblems/truthbearers.svg" alt="Truthbearers Emblem">
+      <div class="group-title">The Truthbearers</div>
+      <div class="group-age">Ages 13+</div>
+      <div class="group-focus">Explaining and Sharing the Faith</div>
+      <a href="/truthbearers" class="button-link">Coming Soon</a>
     </div>
-    <div class="description">Equipped to explain and share the faith</div>
-    <button class="preview-button" disabled>Coming Soon</button>
-  </div>
+  </section>
 </body>
 </html>
