@@ -6,36 +6,49 @@
   <title>Saints Academy</title>
   <style>
     body {
-      font-family: Georgia, serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #ffffff;
-      margin: 40px;
+      color: #000000;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
     }
     h1 {
-      font-size: 28px;
-      margin-bottom: 16px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    h2 {
-      font-size: 20px;
-      margin-top: 28px;
-      margin-bottom: 4px;
+    .group {
+      margin-bottom: 2.5rem;
+    }
+    .group-title {
+      font-size: 1.2rem;
+      font-weight: bold;
       display: flex;
       align-items: center;
+      margin-bottom: 0.3rem;
     }
-    h2 img {
+    .group-title img {
+      width: 20px;
       height: 20px;
-      vertical-align: middle;
-      margin-right: 6px;
+      margin-right: 0.5rem;
     }
-    p {
-      margin-top: 0;
-      margin-bottom: 8px;
+    .description {
+      margin-bottom: 0.5rem;
     }
-    button {
-      font-family: inherit;
-      font-size: 14px;
-      padding: 6px 12px;
-      margin-bottom: 24px;
+    .preview-button {
+      background-color: #e0e0e0;
+      border: 1px solid #ccc;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.9rem;
       cursor: pointer;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+    }
+    .preview-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
     }
   </style>
 </head>
@@ -43,24 +56,49 @@
   <h1>Saints Academy</h1>
   <p>Pick your path and explore a free Week 1 preview for each group below.</p>
 
-  <h2><img src="/images/lightbearers.png" alt="Lightbearers Emblem" />Lightbearers (Ages 6–7)</h2>
-  <p>Learning God’s Mercy and Forgiveness</p>
-  <button onclick="location.href='/lightbearers/'">🔍 Preview Week 1</button>
+  <div class="group">
+    <div class="group-title">
+      <img src="/images/lightbearers.png" alt="Lightbearers emblem" />
+      Lightbearers (Ages 6–7)
+    </div>
+    <div class="description">Learning God’s Mercy and Forgiveness</div>
+    <a class="preview-button" href="/lightbearers">Preview Week 1</a>
+  </div>
 
-  <h2><img src="/images/feastbearers.png" alt="Feastbearers Emblem" />Feastbearers (Ages 7–8)</h2>
-  <p>Receiving Jesus in the Eucharist</p>
-  <button onclick="location.href='/feastbearers/'">🔍 Preview Week 1</button>
+  <div class="group">
+    <div class="group-title">
+      <img src="/images/feastbearers.png" alt="Feastbearers emblem" />
+      Feastbearers (Ages 7–8)
+    </div>
+    <div class="description">Receiving Jesus in the Eucharist</div>
+    <a class="preview-button" href="/feastbearers">Preview Week 1</a>
+  </div>
 
-  <h2><img src="/images/pathbearers.png" alt="Pathbearers Emblem" />Pathbearers (Ages 9–10)</h2>
-  <p>Following God’s Call</p>
-  <button onclick="location.href='/pathbearers/'">🔍 Preview Week 1</button>
+  <div class="group">
+    <div class="group-title">
+      <img src="/images/pathbearers.png" alt="Pathbearers emblem" />
+      Pathbearers (Ages 9–10)
+    </div>
+    <div class="description">Following God’s Call</div>
+    <a class="preview-button" href="/pathbearers">Preview Week 1</a>
+  </div>
 
-  <h2><img src="/images/shieldbearers.png" alt="Shieldbearers Emblem" />Shieldbearers (Ages 11–13)</h2>
-  <p>Strengthened to defend the Faith</p>
-  <button onclick="location.href='/shieldbearers/'">🔍 Preview Week 1</button>
+  <div class="group">
+    <div class="group-title">
+      <img src="/images/shieldbearers.png" alt="Shieldbearers emblem" />
+      Shieldbearers (Ages 11–13)
+    </div>
+    <div class="description">Strengthened to defend the Faith</div>
+    <a class="preview-button" href="/shieldbearers">Preview Week 1</a>
+  </div>
 
-  <h2><img src="/images/truthbearers.png" alt="Truthbearers Emblem" />Truthbearers (Ages 13+)</h2>
-  <p>Equipped to explain and share the faith</p>
-  <button disabled>🚧 Coming Soon</button>
+  <div class="group">
+    <div class="group-title">
+      <img src="/images/truthbearers.png" alt="Truthbearers emblem" />
+      Truthbearers (Ages 13+)
+    </div>
+    <div class="description">Equipped to explain and share the faith</div>
+    <button class="preview-button" disabled>Coming Soon</button>
+  </div>
 </body>
 </html>
