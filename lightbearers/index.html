@@ -1,228 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lightbearers</title>
-    <style>
-      body {
-        background-color: #fddde6;
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #000;
-      }
-      .center {
-        text-align: center;
-      }
-      .section {
-        padding: 30px 10px;
-      }
-      .pink-background {
-        background-color: #fddde6;
-      }
-      .btn {
-        display: inline-block;
-        margin: 10px auto;
-        padding: 10px 20px;
-        background-color: #3d9140;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .card-img {
-        width: 300px;
-        max-width: 100%;
-      }
-      .tracker-img {
-        width: 500px;
-        max-width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="section center">
-      <img
-        src="/images/lightbearer images/lightbearers-welcome.png"
-        alt="Welcome Lightbearers"
-        class="card-img"
-      />
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Lightbearers (Ages 6–7)</title>
+  <style>
+    body {
+      background-color: #fddde6;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2 {
+      color: #330066;
+      font-family: "Trebuchet MS", sans-serif;
+    }
+    .section {
+      margin: 40px 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background-color: #2c8f45;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    audio {
+      margin-top: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
 
-    <div class="section center pink-background">
-      <h2>St. Thérèse of Lisieux<br />Our Lightbearer Guide 🔦</h2>
-      <p>
-        St. Thérèse was a joyful young girl who believed that even the smallest acts
-        of love can change the world. She called this her ‘Little Way’ — being kind,
-        saying sorry when we mess up, and trusting that Jesus always forgives us.
-      </p>
-      <p>
-        Press the arrow to learn more:
-        <br />
-        <audio controls>
-          <source src="/audio/st-therese.mp3" type="audio/mpeg" />
-        </audio>
-      </p>
-      <h3>Membership Card</h3>
-      <p>Designed to be cut and laminated or glued onto cardstock</p>
+  <div class="section">
+    <img src="/images/lightbearer images/lightbearers-welcome.png" alt="Welcome Lightbearers">
+  </div>
+
+  <div class="section">
+    <h1>St. Thérèse of Lisieux<br>Our Lightbearer Guide <span>🔦</span></h1>
+    <p>St. Thérèse was a joyful young girl who believed that even the smallest acts of love can change the world. She called this her ‘Little Way’ — being kind, saying sorry when we mess up, and trusting that Jesus always forgives us.</p>
+
+    <p><strong>Press the arrow to learn more:</strong></p>
+    <audio controls>
+      <source src="/audio/st-therese-lightbearer.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="section">
+    <h2>Membership Card</h2>
+    <p>Designed to be cut and laminated<br>or glued onto cardstock</p>
+
+    <div class="card-container">
       <div>
-        <img
-          src="/images/lightbearer images/lightbearers-member-front.png"
-          alt="Membership Card Front"
-          class="card-img"
-        />
-        <br />
-        <a
-          href="/pdfs/lightbearer pdfs/Lightbearers_Membership_Cards_Final.pdf"
-          class="btn"
-          >PRINT SET OF 4</a
-        >
-        <br /><br />
-        <img
-          src="/images/lightbearer images/lightbearers-member-back.png"
-          alt="Membership Card Back"
-          class="card-img"
-        />
-        <br />
-        <a
-          href="/pdfs/lightbearer pdfs/Lightbearers_Membership_Cards_Back.pdf"
-          class="btn"
-          >PRINT SET OF 4</a
-        >
+        <p><strong>FRONT</strong></p>
+        <img src="/images/lightbearer images/lightbearers-member-front.png" alt="Membership Card Front">
+      </div>
+      <div>
+        <p><strong>BACK</strong></p>
+        <img src="/images/lightbearer images/lightbearers-member-back.png" alt="Membership Card Back">
       </div>
     </div>
 
-    <div class="section center pink-background">
-      <h2>🌸 Week 1<br />September - Trusting in God's Mercy</h2>
-      <p>
-        Learning from St. Thérèse of Lisieux<br />St. Thérèse teaches us how to love Jesus
-        through small, everyday acts of kindness
-      </p>
-      <img
-        src="/images/lightbearer images/boy-thinking.png"
-        alt="Boy Thinking"
-        class="card-img"
-      />
-      <ul style="text-align: left; max-width: 500px; margin: auto">
-        <li>Say sorry when you hurt someone</li>
-        <li>Help your parents without being asked</li>
-        <li>Say a prayer for someone who’s sad</li>
-      </ul>
-      <a
-        href="/pdfs/lightbearer pdfs/FINAL_ONE_Lightbearers_Card.pdf"
-        class="btn"
-        >PRINT</a
-      >
-    </div>
+    <a href="/pdfs/lightbearer pdfs/Lightbearers_Membership_Cards_Final.pdf">
+      <button class="btn">PRINT SET OF 4</button>
+    </a>
+  </div>
 
-    <div class="section center pink-background">
-      <img
-        src="/images/lightbearer images/st-therese-colouring.png"
-        alt="St. Therese Colouring"
-        class="card-img"
-      />
-      <a
-        href="/pdfs/lightbearer pdfs/St_Therese_Coloring_Page.pdf"
-        class="btn"
-        >PRINT</a
-      >
-    </div>
+  <div class="section">
+    <h2>Tracker</h2>
+    <img src="/images/lightbearer images/lightbearers-torch-tracker.png" alt="Lightbearers Torch Tracker">
+    <br>
+    <a href="/pdfs/lightbearer pdfs/Lightbearers_Torch_Tracker.pdf">
+      <button class="btn">DOWNLOAD</button>
+    </a>
+  </div>
 
-    <div class="section center pink-background">
-      <img
-        src="/images/lightbearer images/petals-of-love.png"
-        alt="Petals of Love"
-        class="card-img"
-      />
-      <a
-        href="/pdfs/lightbearer pdfs/Petals_of_Love_Worksheet.pdf"
-        class="btn"
-        >PRINT</a
-      >
-    </div>
+  <div class="section">
+    <h2>Little Way Deeds Jar</h2>
+    <img src="/images/lightbearer images/little-way-deeds-jar.png" alt="Little Way Deeds Jar">
+    <br>
+    <a href="/pdfs/lightbearer pdfs/My_Little_Way_Worksheet_Final.pdf">
+      <button class="btn">DOWNLOAD</button>
+    </a>
+  </div>
 
-    <div class="section center pink-background">
-      <img
-        src="/images/lightbearer images/st-therese-wordsearch_clean.png"
-        alt="Wordsearch"
-        class="card-img"
-      />
-      <a
-        href="/pdfs/lightbearer pdfs/St_Therese_Wordsearch_Clean.pdf"
-        class="btn"
-        >PRINT</a
-      >
-    </div>
+  <div class="section">
+    <h2>Petals of Love</h2>
+    <img src="/images/lightbearer images/petals-of-love.png" alt="Petals of Love">
+    <br>
+    <a href="/pdfs/lightbearer pdfs/Petals_of_Love_Worksheet.pdf">
+      <button class="btn">DOWNLOAD</button>
+    </a>
+  </div>
 
-    <div class="section center pink-background">
-      <img
-        src="/images/lightbearer images/little-way-deeds-jar.png"
-        alt="Little Way Deeds Jar"
-        class="card-img"
-      />
-      <a
-        href="/pdfs/lightbearer pdfs/My_Little_Way_Worksheet_Final.pdf"
-        class="btn"
-        >PRINT</a
-      >
-    </div>
-
-    <div class="section center pink-background">
-      <p>
-        Instructions for this week's group activity in worksheet.
-        <br />
-        <a
-          href="/pdfs/lightbearer pdfs/My_Little_Way_Worksheet_Final.pdf"
-          class="btn"
-          >Download Worksheet</a
-        >
-      </p>
-    </div>
-
-    <div class="section center pink-background">
-      <h2>Week One Complete!</h2>
-      <p>You can now print off your tracker and check week 1</p>
-      <img
-        src="/images/lightbearer images/lightbearers-torch-tracker.png"
-        alt="Torch Tracker"
-        class="tracker-img"
-      />
-      <br />
-      <a
-        href="/pdfs/lightbearer pdfs/Lightbearers_Torch_Tracker.pdf"
-        class="btn"
-        >PRINT</a
-      >
-    </div>
-
-    <div class="section center pink-background">
-      <h3>🌸 Collectible Saint Cards Are Coming Soon!</h3>
-      <p>
-        St. Thérèse of Lisieux is one of the first Lightbearer cards you'll be able to
-        collect.<br />
-        Learn about her Little Way this week...<br />
-        and keep an eye out when the full set becomes available!
-      </p>
+  <div class="section">
+    <h2>St. Thérèse Collector Card</h2>
+    <div class="card-container">
       <div>
-        <img
-          src="/images/lightbearer images/st-therese-collector-card-front.png"
-          alt="St Therese Collector Card Front"
-          class="card-img"
-        />
-        <img
-          src="/images/lightbearer images/st-therese-collector-card-back.png"
-          alt="St Therese Collector Card Back"
-          class="card-img"
-        />
+        <p><strong>FRONT</strong></p>
+        <img src="/images/lightbearer images/st-therese-collector-card-front.png" alt="St. Thérèse Collector Card Front">
+      </div>
+      <div>
+        <p><strong>BACK</strong></p>
+        <img src="/images/lightbearer images/st-therese-collector-card-back.png" alt="St. Thérèse Collector Card Back">
       </div>
     </div>
+    <br>
+    <a href="/pdfs/lightbearer pdfs/FINAL_ONE_Lightbearers_Card.pdf">
+      <button class="btn">DOWNLOAD</button>
+    </a>
+  </div>
 
-    <div class="section center pink-background">
-      <h2>Ready to begin?</h2>
-      <p>
-        Join the Lightbearers and start your journey of mercy, joy, and kindness!
-      </p>
-      <a href="/enroll" class="btn">Enroll Now</a>
+  <div class="section">
+    <h2>St. Thérèse Activities</h2>
+    <div class="card-container">
+      <div>
+        <img src="/images/lightbearer images/st-therese-colouring.png" alt="St. Thérèse Colouring Page">
+        <br>
+        <a href="/pdfs/lightbearer pdfs/St_Therese_Coloring_Page.pdf">
+          <button class="btn">DOWNLOAD</button>
+        </a>
+      </div>
+      <div>
+        <img src="/images/lightbearer images/st_therese_wordsearch_clean.png" alt="St. Thérèse Wordsearch">
+        <br>
+        <a href="/pdfs/lightbearer pdfs/St_Therese_Wordsearch_Clean.pdf">
+          <button class="btn">DOWNLOAD</button>
+        </a>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <div class="section">
+    <img src="/images/lightbearer images/boy-thinking.png" alt="Boy Thinking">
+  </div>
+
+  <div class="section">
+    <h2>Enrol as a Lightbearer!</h2>
+    <p>Be part of something beautiful. Join the Lightbearers and carry God’s light into the world.</p>
+    <a href="https://www.catholicismrocks.com/enrol">
+      <button class="btn">ENROL NOW</button>
+    </a>
+  </div>
+
+</body>
 </html>
