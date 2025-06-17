@@ -1,132 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Lightbearers</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #fddde6;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .button {
-      display: inline-block;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      margin: 10px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbearers (Ages 6–7)</title>
+    <style>
+      body {
+        background-color: #fbdada;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
 
-<!-- Welcome Image -->
-<section>
-  <img src="/images/lightbearer%20images/lightbearers-welcome.png" alt="Welcome Lightbearers" />
-</section>
+      .section {
+        margin: 40px auto;
+        max-width: 850px;
+        padding: 0 20px;
+      }
 
-<!-- St. Therese Intro -->
-<section>
-  <h2>St. Thérèse of Lisieux<br />Our Lightbearer Guide 🔦</h2>
-  <p>St. Thérèse was a joyful young girl who believed that even<br />
-    the smallest acts of love can change the world. She called<br />
-    this her ‘Little Way’ — being kind, saying sorry when we<br />
-    mess up, and trusting that Jesus always forgives us.
-  </p>
-  <a class="button" href="https://github.com/SeanCatholic/saints-academy/raw/main/lightbearer%20pdfs/St_Therese_the_little_Flower.mp3" target="_blank">▶ St. Thérèse the little Flower</a>
-</section>
+      .section img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px auto;
+      }
 
-<!-- Membership Card -->
-<section>
-  <h2>Membership Card</h2>
-  <p>Designed to be cut and laminated<br />or glued onto cardstock</p>
-  <div>
-    <h3>FRONT</h3>
-    <img src="/images/lightbearer%20images/lightbearers-member-front.png" alt="Membership Front" />
-    <a class="button" href="/lightbearer%20pdfs/Lightbearers_Membership_Cards_Final.pdf" target="_blank">PRINT SET OF 4</a>
-  </div>
-  <div>
-    <h3>BACK</h3>
-    <img src="/images/lightbearer%20images/lightbearers-member-back.png" alt="Membership Back" />
-    <a class="button" href="/lightbearer%20pdfs/Lightbearers_Membership_Cards_Back.pdf" target="_blank">PRINT SET OF 4</a>
-  </div>
-</section>
+      .print-button,
+      .download-button,
+      .enroll-button,
+      .info-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 20px auto;
+        display: block;
+      }
 
-<!-- Week 1 Intro -->
-<section>
-  <h2>🌸 Week 1</h2>
-  <h3>September - Trusting in God's Mercy</h3>
-  <p>Learning from St. Thérèse of Lisieux<br />
-    St. Thérèse teaches us how to love Jesus through small,<br />
-    everyday acts of kindness
-  </p>
-  <img src="/images/lightbearer%20images/boy-thinking.png" alt="Boy Thinking" />
-  <ul>
-    <li>Say sorry when you hurt someone</li>
-    <li>Say a prayer for someone who’s sad</li>
-  </ul>
-  <a class="button" href="/lightbearer%20pdfs/My_Little_Way_Worksheet_boy_thinking.pdf" target="_blank">PRINT</a>
-</section>
+      .print-button:hover,
+      .download-button:hover,
+      .enroll-button:hover,
+      .info-button:hover {
+        background-color: #3f923e;
+      }
 
-<!-- Coloring Page -->
-<section>
-  <img src="/images/lightbearer%20images/st-therese-colouring.png" alt="St. Therese Colouring" />
-  <a class="button" href="/lightbearer%20pdfs/St_Therese_Coloring_Page.pdf" target="_blank">PRINT</a>
-</section>
+      .card-pair {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Welcome Banner -->
+    <div class="section">
+      <img src="/images/lightbearer%20images/lightbearers-welcome.png" alt="Welcome Lightbearers" />
+    </div>
 
-<!-- Petals of Love Worksheet -->
-<section>
-  <img src="/images/lightbearer%20images/petals-of-love.png" alt="Petals of Love" />
-  <a class="button" href="/lightbearer%20pdfs/Petals_of_Love_Worksheet.pdf" target="_blank">PRINT</a>
-</section>
+    <!-- St. Thérèse Intro -->
+    <div class="section">
+      <h2>St. Thérèse of Lisieux<br />Our Lightbearer Guide</h2>
+      <p>
+        St. Thérèse was a joyful young girl who believed that even the smallest acts of love can change the world. She called this her ‘Little Way’ — being kind, saying sorry when we mess up, and trusting that Jesus always forgives us.
+      </p>
+      <button class="info-button">St. Thérèse the little Flower</button>
+    </div>
 
-<!-- Wordsearch -->
-<section>
-  <img src="/images/lightbearer%20images/st_therese_wordsearch_clean.png" alt="Wordsearch" />
-  <a class="button" href="/lightbearer%20pdfs/St_Therese_Wordsearch_Clean.pdf" target="_blank">PRINT</a>
-</section>
+    <!-- Membership Card -->
+    <div class="section">
+      <h3>Membership Card</h3>
+      <p>Designed to be cut and laminated or glued onto cardstock</p>
+      <div class="card-pair">
+        <div>
+          <p>FRONT</p>
+          <img src="/images/lightbearer%20images/lightbearers-member-front.png" alt="Card Front" />
+          <button class="print-button">PRINT SET OF 4</button>
+        </div>
+        <div>
+          <p>BACK</p>
+          <img src="/images/lightbearer%20images/lightbearers-member-back.png" alt="Card Back" />
+          <button class="print-button">PRINT SET OF 4</button>
+        </div>
+      </div>
+    </div>
 
-<!-- Deeds Jar -->
-<section>
-  <img src="/images/lightbearer%20images/little-way-deeds-jar.png" alt="Little Way Deeds Jar" />
-  <a class="button" href="/lightbearer%20pdfs/My_Little_Way_Worksheet_boy_thinking.pdf" target="_blank">Download Worksheet</a>
-</section>
+    <!-- Week 1 Theme -->
+    <div class="section">
+      <h2>🌸 Week 1<br />September— Trusting in God's Mercy</h2>
+      <p>
+        Learning from St. Thérèse of Lisieux<br />
+        St. Thérèse teaches us how to love Jesus through small, everyday acts of kindness
+      </p>
+    </div>
 
-<!-- Tracker Section -->
-<section>
-  <h2>🌸 Week One Complete!</h2>
-  <p>You can now print off your tracker and check week 1</p>
-  <img src="/images/lightbearer%20images/lightbearers-torch-tracker.png" alt="Torch Tracker" />
-  <a class="button" href="/lightbearer%20pdfs/Lightbearers_Torch_Tracker.pdf" target="_blank">PRINT</a>
-</section>
+    <!-- Thinking Prompt -->
+    <div class="section">
+      <img src="/images/lightbearer%20images/boy-thinking.png" alt="Thinking Boy" />
+      <ul style="text-align:left; max-width:600px; margin: 0 auto;">
+        <li>Can you think of a small, loving thing you could do today?</li>
+        <li>Say sorry when you hurt someone</li>
+        <li>Help your parents without being asked</li>
+        <li>Say a prayer for someone who’s sad</li>
+      </ul>
+    </div>
 
-<!-- Collector Cards -->
-<section>
-  <h2>🌸 Collectible Saint Cards Are Coming Soon!</h2>
-  <p>St. Thérèse of Lisieux is one of the first Lightbearer<br />
-    cards you’ll be able to collect.<br />
-    Learn about her Little Way this week…<br />
-    and keep an eye out when the full set becomes<br />
-    available!
-  </p>
-  <div>
-    <h3>Front</h3>
-    <img src="/images/lightbearer%20images/st-therese-collector-card-front.png" alt="Collector Card Front" />
-    <h3>Back</h3>
-    <img src="/images/lightbearer%20images/st-therese-collector-card-back.png" alt="Collector Card Back" />
-  </div>
-</section>
+    <!-- Colouring Image -->
+    <div class="section">
+      <button class="print-button">PRINT</button>
+      <img src="/images/lightbearer%20images/st-therese-colouring.png" alt="Colouring Page" />
+    </div>
 
-</body>
+    <!-- Petals Worksheet -->
+    <div class="section">
+      <button class="print-button">PRINT</button>
+      <img src="/images/lightbearer%20images/petals-of-love.png" alt="Petals Worksheet" />
+    </div>
+
+    <!-- Wordsearch -->
+    <div class="section">
+      <button class="print-button">PRINT</button>
+      <img src="/images/lightbearer%20images/st_therese_wordsearch_clean.png" alt="Wordsearch" />
+    </div>
+
+    <!-- Deeds Jar -->
+    <div class="section">
+      <img src="/images/lightbearer%20images/little-way-deeds-jar.png" alt="Deeds Jar" />
+      <p>Instructions for this week's group activity, in worksheet.</p>
+      <button class="download-button">Download Worksheet</button>
+    </div>
+
+    <!-- Torch Tracker -->
+    <div class="section">
+      <h3>Week One Complete!</h3>
+      <p>You can now print off your tracker and check week 1</p>
+      <img src="/images/lightbearer%20images/lightbearers-torch-tracker.png" alt="Torch Tracker" />
+      <button class="print-button">PRINT</button>
+    </div>
+
+    <!-- Collector Cards -->
+    <div class="section">
+      <h3>🌸 Collectible Saint Cards Are Coming Soon!</h3>
+      <p>
+        St. Thérèse of Lisieux is one of the first Lightbearer cards you'll be able to collect.<br />
+        Learn about her Little Way this week...<br />
+        and keep an eye out when the full set becomes available!
+      </p>
+      <div class="card-pair">
+        <img src="/images/lightbearer%20images/st-therese-collector-card-front.png" alt="St. Therese Collector Front" />
+        <img src="/images/lightbearer%20images/st-therese-collector-card-back.png" alt="St. Therese Collector Back" />
+      </div>
+    </div>
+
+    <!-- Enroll Button -->
+    <div class="section">
+      <button class="enroll-button">Enroll Now to Start Your Lightbearers Journey</button>
+    </div>
+  </body>
 </html>
