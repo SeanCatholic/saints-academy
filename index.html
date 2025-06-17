@@ -3,128 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lightbearers (Ages 6–7) | Saints Academy</title>
+  <title>Saints Academy | CatholicismRocks</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #fde8ef;
+      background-color: #fefefe;
       color: #333;
-      padding-bottom: 60px;
     }
 
-    .hero {
-      width: 100%;
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      max-width: 750px;
-      margin: 0 auto;
+    header {
+      background-color: #4d8845;
       padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    section {
+      padding: 40px 20px;
       text-align: center;
     }
 
-    h1 {
-      font-size: 28px;
-      color: #6c1e2b;
+    .group-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    h2 {
-      font-size: 22px;
-      color: #a2364b;
-      margin-top: 40px;
+    .group-card {
+      border: 2px solid #d0ecca;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #f9fdf8;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
     }
 
-    .card-preview {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-      flex-wrap: wrap;
+    .group-card:hover {
+      transform: translateY(-5px);
     }
 
-    .card-preview img {
-      width: 160px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .group-card h3 {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #4d8845;
     }
 
-    button {
-      background-color: #6c1e2b;
+    .group-card p {
+      font-size: 14px;
+      margin: 10px 0 20px;
+    }
+
+    .group-card button {
+      background-color: #607f5b;
       color: white;
-      padding: 10px 18px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .group-card button:hover {
+      background-color: #4d8845;
+    }
+
+    .enroll-section {
+      background-color: #d0ecca;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .enroll-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .enroll-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .enroll-section button {
+      background-color: #4d8845;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
       border: none;
       border-radius: 6px;
       font-weight: 600;
-      margin: 10px;
       cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .enroll-section button:hover {
+      background-color: #3a6d37;
     }
 
     button:hover {
-      background-color: #a2364b;
-    }
-
-    .activity img {
-      width: 100%;
-      max-width: 500px;
-      margin: 10px auto;
-      display: block;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .enroll {
-      margin-top: 60px;
+      opacity: 0.9;
+      transition: opacity 0.2s ease-in-out;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <img src="../images/lightbearer images/lightbearers-welcome.png" alt="Welcome Lightbearers" class="hero" />
+  <header>
+    <h1>Saints Academy</h1>
+    <p>A 36-week formation journey through the lives of the saints — for every age group.</p>
+  </header>
 
-  <div class="container">
-    <h1>St. Thérèse of Lisieux<br><small>Our Lightbearer Guide 🔥</small></h1>
-    <p>Welcome to the Lightbearers! Each week, you’ll meet a new saint and discover how to shine God’s light through mercy and forgiveness. St. Thérèse leads the way with her “Little Way” of love.</p>
+  <section>
+    <h2>Pick Your Path</h2>
+    <p>Each age-based group starts with a free Week 1 preview. Unlock all 36 weeks when you enroll.</p>
 
-    <div class="card-preview">
-      <div>
-        <img src="../images/lightbearer images/st-therese-collector-card-front.png" alt="Front of Membership Card" />
-        <p>Front</p>
+    <div class="group-grid">
+      <div class="group-card">
+        <h3>
+          <img src="images/lightbearers.png" alt="Lightbearers emblem: glowing flame" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Lightbearers (Ages 6–7)
+        </h3>
+        <p>Learning God’s Mercy and Forgiveness</p>
+        <button onclick="location.href='/lightbearers/'">📖 Preview Week 1</button>
       </div>
-      <div>
-        <img src="../images/lightbearer images/st-therese-collector-card-back.png" alt="Back of Membership Card" />
-        <p>Back</p>
+
+      <div class="group-card">
+        <h3>
+          <img src="images/feastbearers.png" alt="Feastbearers emblem: Eucharistic cross" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Feastbearers (Ages 7–8)
+        </h3>
+        <p>Receiving Jesus in the Eucharist</p>
+        <button onclick="location.href='/feastbearers/'">📖 Preview Week 1</button>
+      </div>
+
+      <div class="group-card">
+        <h3>
+          <img src="images/pathbearers.png" alt="Pathbearers emblem: footprints" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Pathbearers (Ages 9–10)
+        </h3>
+        <p>Saying Yes to God’s Call</p>
+        <button onclick="location.href='/pathbearers/'">📖 Preview Week 1</button>
+      </div>
+
+      <div class="group-card">
+        <h3>
+          <img src="images/shieldbearers.png" alt="Shieldbearers emblem: cross and flame in shield" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Shieldbearers (Ages 11–13)
+        </h3>
+        <p>Strengthened by Confirmation to Defend the Faith</p>
+        <button onclick="location.href='/shieldbearers/'">📖 Preview Week 1</button>
+      </div>
+
+      <div class="group-card">
+        <h3>
+          <img src="images/truthbearers.png" alt="Truthbearers emblem: sword and book" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+          Truthbearers (Ages 13+)
+        </h3>
+        <p>Equipped to Explain and Share the Faith</p>
+        <button disabled>🚧 Coming Soon</button>
       </div>
     </div>
-    <button onclick="location.href='../downloads/lightbearers-membership-card.pdf'">Download Card</button>
+  </section>
 
-    <h2>🌸 Week 1<br>September: Trusting in God’s Mercy</h2>
-
-    <div class="activity">
-      <img src="../images/lightbearer images/boy-thinking.png" alt="Week 1 Reflection Worksheet" />
-      <button onclick="location.href='../downloads/lightbearers-week1.pdf'">Download Worksheet</button>
-    </div>
-
-    <div class="activity">
-      <img src="../images/lightbearer images/st-therese-colouring.png" alt="St. Therese Coloring Page" />
-      <img src="../images/lightbearer images/petals-of-love.png" alt="Petals of Love Activity" />
-      <img src="../images/lightbearer images/st_therese_wordsearch_clean.png" alt="Wordsearch" />
-      <img src="../images/lightbearer images/little-way-deeds-jar.png" alt="Deeds Jar" />
-    </div>
-
-    <div class="activity">
-      <img src="../images/lightbearer images/lightbearers-torch-tracker.png" alt="Progress Tracker" />
-      <button onclick="location.href='../downloads/lightbearers-tracker.pdf'">Download Tracker</button>
-    </div>
-
-    <div class="enroll">
-      <h2>🌟 Want to Keep Going?</h2>
-      <p>Unlock all 36 weeks for Lightbearers and access the full Saints Academy path.</p>
-      <button onclick="location.href='../enroll.html'">Enroll Now</button>
-    </div>
-  </div>
+  <section class="enroll-section">
+    <h2>Ready to Begin the Journey?</h2>
+    <p>Enroll once to unlock all 5 groups and the full 36-week experience.</p>
+    <button onclick="location.href='enroll.html'">✅ Enroll Now</button>
+  </section>
 
 </body>
 </html>
