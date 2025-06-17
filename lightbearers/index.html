@@ -3,105 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lightbearers – Week 1 Preview</title>
+  <title>Lightbearers (Ages 6–7) | Saints Academy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #fde9eb;
+      background-color: #fde8ef;
       color: #333;
+      padding-bottom: 60px;
     }
 
-    section {
-      max-width: 700px;
+    .hero {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 750px;
       margin: 0 auto;
       padding: 20px;
       text-align: center;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 8px;
+    h1 {
+      font-size: 28px;
+      color: #6c1e2b;
     }
 
-    h1, h2, h3 {
-      color: #4d8845;
-    }
-
-    .button {
-      background-color: #607f5b;
-      color: white;
-      padding: 10px 16px;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin: 10px auto;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #4d8845;
-    }
-
-    .enroll-section {
-      background-color: #d0ecca;
-      padding: 30px 20px;
+    h2 {
+      font-size: 22px;
+      color: #a2364b;
       margin-top: 40px;
-      text-align: center;
     }
 
-    .enroll-section p {
-      margin-bottom: 20px;
-      font-size: 16px;
+    .card-preview {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .card-preview img {
+      width: 160px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background-color: #6c1e2b;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a2364b;
+    }
+
+    .activity img {
+      width: 100%;
+      max-width: 500px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .enroll {
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
-  <section>
-    <img src="images/lightbearers-banner.png" alt="Welcome Lightbearers banner with St. Thérèse and children">
+  <img src="../images/lightbearer images/lightbearers-welcome.png" alt="Welcome Lightbearers" class="hero" />
 
-    <h2>St. Thérèse of Lisieux<br><small>Our Lightbearer Guide</small></h2>
-    <p>This month we are guided by St. Thérèse, who teaches us to do small things with great love. Every Lightbearer activity this month is inspired by her life and example.</p>
-    <a href="images/lightbearers-card-front.png"><img src="images/lightbearers-card-front.png" alt="Membership card front" style="width: 45%; margin: 10px;"></a>
-    <a href="images/lightbearers-card-back.png"><img src="images/lightbearers-card-back.png" alt="Membership card back" style="width: 45%; margin: 10px;"></a>
+  <div class="container">
+    <h1>St. Thérèse of Lisieux<br><small>Our Lightbearer Guide 🔥</small></h1>
+    <p>Welcome to the Lightbearers! Each week, you’ll meet a new saint and discover how to shine God’s light through mercy and forgiveness. St. Thérèse leads the way with her “Little Way” of love.</p>
 
-    <h3>🌸 Week 1<br>September – Trusting in God’s Mercy</h3>
-    <ul style="text-align: left; max-width: 500px; margin: 0 auto 20px;">
-      <li>Can you think of a small, loving thing you could do today?</li>
-      <li>Is there a time you’ve felt like Thérèse — little, but loved?</li>
-      <li>What’s a moment this month that made you feel God’s mercy?</li>
-    </ul>
+    <div class="card-preview">
+      <div>
+        <img src="../images/lightbearer images/st-therese-collector-card-front.png" alt="Front of Membership Card" />
+        <p>Front</p>
+      </div>
+      <div>
+        <img src="../images/lightbearer images/st-therese-collector-card-back.png" alt="Back of Membership Card" />
+        <p>Back</p>
+      </div>
+    </div>
+    <button onclick="location.href='../downloads/lightbearers-membership-card.pdf'">Download Card</button>
 
-    <img src="images/lightbearers-boy-prayer.png" alt="Boy thinking about mercy">
-    <br><br>
+    <h2>🌸 Week 1<br>September: Trusting in God’s Mercy</h2>
 
-    <img src="images/therese-colour.png" alt="St. Thérèse coloring page">
-    <br><br>
+    <div class="activity">
+      <img src="../images/lightbearer images/boy-thinking.png" alt="Week 1 Reflection Worksheet" />
+      <button onclick="location.href='../downloads/lightbearers-week1.pdf'">Download Worksheet</button>
+    </div>
 
-    <img src="images/petal-reflection.png" alt="Flower reflection activity">
-    <br><br>
+    <div class="activity">
+      <img src="../images/lightbearer images/st-therese-colouring.png" alt="St. Therese Coloring Page" />
+      <img src="../images/lightbearer images/petals-of-love.png" alt="Petals of Love Activity" />
+      <img src="../images/lightbearer images/st_therese_wordsearch_clean.png" alt="Wordsearch" />
+      <img src="../images/lightbearer images/little-way-deeds-jar.png" alt="Deeds Jar" />
+    </div>
 
-    <img src="images/wordsearch.png" alt="St. Thérèse Wordsearch">
-    <br><br>
+    <div class="activity">
+      <img src="../images/lightbearer images/lightbearers-torch-tracker.png" alt="Progress Tracker" />
+      <button onclick="location.href='../downloads/lightbearers-tracker.pdf'">Download Tracker</button>
+    </div>
 
-    <img src="images/little-way-jar.png" alt="Little Way Deeds Jar">
-    <br><br>
-
-    <img src="images/torch-tracker.png" alt="Torch tracker">
-    <br><br>
-
-    <img src="images/st-therese-sticker.png" alt="Sticker image for St. Thérèse">
-  </section>
-
-  <section class="enroll-section">
-    <p><strong>Want to unlock all 36 weeks of Lightbearers?</strong><br>
-    Enroll now to continue your journey!</p>
-    <a href="#" class="button">✅ Enroll Now</a>
-  </section>
+    <div class="enroll">
+      <h2>🌟 Want to Keep Going?</h2>
+      <p>Unlock all 36 weeks for Lightbearers and access the full Saints Academy path.</p>
+      <button onclick="location.href='../enroll.html'">Enroll Now</button>
+    </div>
+  </div>
 
 </body>
 </html>
-
