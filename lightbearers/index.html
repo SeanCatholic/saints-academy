@@ -1,130 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lightbearers (Ages 6–7) | Saints Academy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fde8ef;
-      color: #333;
-      padding-bottom: 60px;
-    }
+<!-- Lightbearers Page (Exact Replica Without Header/Footer) -->
 
-    .hero {
-      width: 100%;
-      max-width: 100%;
-      display: block;
-    }
+<main class="bg-[#fefefe] p-6 max-w-5xl mx-auto">
+  <!-- Welcome Image -->
+  <img src="/images/welcome-lightbearers.png" alt="Welcome Lightbearers" class="mb-6 w-full">
 
-    .container {
-      max-width: 750px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
+  <!-- St. Thérèse Introduction -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">St. Thérèse of Lisieux – Our Lightbearer Guide</h2>
+    <p class="mb-4">
+      St. Thérèse was a joyful young girl who wanted to bring light into the world by loving God in small ways. She reminds us that every little act of love matters! As our Lightbearer guide, she shows us how to share God's love with everyone through her "Little Way."
+    </p>
+  </section>
 
-    h1 {
-      font-size: 28px;
-      color: #6c1e2b;
-    }
+  <!-- Membership Cards -->
+  <section class="mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="text-center">
+        <img src="/images/lightbearers-card-front.png" alt="Membership Card Front" class="mb-2 mx-auto">
+        <a href="/pdfs/lightbearers-card-front.pdf" target="_blank" class="inline-block bg-[#4d8845] text-white px-4 py-2 rounded">PRINT SET OF 4</a>
+      </div>
+      <div class="text-center">
+        <img src="/images/lightbearers-card-back.png" alt="Membership Card Back" class="mb-2 mx-auto">
+        <a href="/pdfs/lightbearers-card-back.pdf" target="_blank" class="inline-block bg-[#4d8845] text-white px-4 py-2 rounded">PRINT SET OF 4</a>
+      </div>
+    </div>
+  </section>
 
-    h2 {
-      font-size: 22px;
-      color: #a2364b;
-      margin-top: 40px;
-    }
+  <!-- Week 1 Content -->
+  <section class="mb-8">
+    <h3 class="text-xl font-semibold mb-2">Week 1 – September: Trusting in God’s Mercy</h3>
+    <p class="mb-4 italic">Learning from St. Thérèse how to trust God’s mercy with simple love and joyful hearts.</p>
+    <ul class="list-disc list-inside mb-4">
+      <li>Draw a time when you felt God's love.</li>
+      <li>Write a small act of kindness you can do today.</li>
+      <li>Ask St. Thérèse to help you show mercy like Jesus.</li>
+    </ul>
 
-    .card-preview {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-      flex-wrap: wrap;
-    }
+    <!-- Worksheets -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="text-center">
+        <img src="/images/lightbearers-worksheet-1.png" alt="Worksheet 1" class="mb-2 mx-auto">
+        <a href="/pdfs/lightbearers-worksheet-1.pdf" target="_blank" class="inline-block bg-[#4d8845] text-white px-4 py-2 rounded">PRINT</a>
+      </div>
+      <div class="text-center">
+        <img src="/images/lightbearers-worksheet-2.png" alt="Worksheet 2" class="mb-2 mx-auto">
+        <a href="/pdfs/lightbearers-worksheet-2.pdf" target="_blank" class="inline-block bg-[#4d8845] text-white px-4 py-2 rounded">PRINT</a>
+      </div>
+      <div class="text-center">
+        <img src="/images/lightbearers-worksheet-3.png" alt="Worksheet 3" class="mb-2 mx-auto">
+        <a href="/pdfs/lightbearers-worksheet-3.pdf" target="_blank" class="inline-block bg-[#4d8845] text-white px-4 py-2 rounded">PRINT</a>
+      </div>
+    </div>
 
-    .card-preview img {
-      width: 160px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+    <!-- Tracker -->
+    <div class="text-center mb-6">
+      <p class="mb-2 italic">You can now print off your tracker and check week 1!</p>
+      <img src="/images/lightbearers-torch-tracker.png" alt="Torch Tracker" class="mb-2 mx-auto">
+      <a href="/pdfs/lightbearers-torch-tracker.pdf" target="_blank" class="inline-block bg-[#4d8845] text-white px-4 py-2 rounded">PRINT</a>
+    </div>
+  </section>
 
-    button {
-      background-color: #6c1e2b;
-      color: white;
-      padding: 10px 18px;
-      border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      margin: 10px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #a2364b;
-    }
-
-    .activity img {
-      width: 100%;
-      max-width: 500px;
-      margin: 10px auto;
-      display: block;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .enroll {
-      margin-top: 60px;
-    }
-  </style>
-</head>
-<body>
-
-  <img src="../images/lightbearer images/lightbearers-welcome.png" alt="Welcome Lightbearers" class="hero" />
-
-  <div class="container">
-    <h1>St. Thérèse of Lisieux<br><small>Our Lightbearer Guide 🔥</small></h1>
-    <p>Welcome to the Lightbearers! Each week, you’ll meet a new saint and discover how to shine God’s light through mercy and forgiveness. St. Thérèse leads the way with her “Little Way” of love.</p>
-
-    <div class="card-preview">
-      <div>
-        <img src="../images/lightbearer images/st-therese-collector-card-front.png" alt="Front of Membership Card" />
+  <!-- Collector Card Teaser -->
+  <section class="mb-10">
+    <h3 class="text-xl font-semibold mb-2">Collector Saint Cards Are Coming Soon!</h3>
+    <p class="mb-4">Each time you complete a theme, you’ll unlock a matching saint card to keep in your collection!</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="text-center">
+        <img src="/images/lightbearers-saint-card-front.png" alt="Saint Card Front" class="mb-2 mx-auto">
         <p>Front</p>
       </div>
-      <div>
-        <img src="../images/lightbearer images/st-therese-collector-card-back.png" alt="Back of Membership Card" />
+      <div class="text-center">
+        <img src="/images/lightbearers-saint-card-back.png" alt="Saint Card Back" class="mb-2 mx-auto">
         <p>Back</p>
       </div>
     </div>
-    <button onclick="location.href='../downloads/lightbearers-membership-card.pdf'">Download Card</button>
+  </section>
 
-    <h2>🌸 Week 1<br>September: Trusting in God’s Mercy</h2>
-
-    <div class="activity">
-      <img src="../images/lightbearer images/boy-thinking.png" alt="Week 1 Reflection Worksheet" />
-      <button onclick="location.href='../downloads/lightbearers-week1.pdf'">Download Worksheet</button>
-    </div>
-
-    <div class="activity">
-      <img src="../images/lightbearer images/st-therese-colouring.png" alt="St. Therese Coloring Page" />
-      <img src="../images/lightbearer images/petals-of-love.png" alt="Petals of Love Activity" />
-      <img src="../images/lightbearer images/st_therese_wordsearch_clean.png" alt="Wordsearch" />
-      <img src="../images/lightbearer images/little-way-deeds-jar.png" alt="Deeds Jar" />
-    </div>
-
-    <div class="activity">
-      <img src="../images/lightbearer images/lightbearers-torch-tracker.png" alt="Progress Tracker" />
-      <button onclick="location.href='../downloads/lightbearers-tracker.pdf'">Download Tracker</button>
-    </div>
-
-    <div class="enroll">
-      <h2>🌟 Want to Keep Going?</h2>
-      <p>Unlock all 36 weeks for Lightbearers and access the full Saints Academy path.</p>
-      <button onclick="location.href='../enroll.html'">Enroll Now</button>
-    </div>
-  </div>
-
-</body>
-</html>
+  <!-- Enroll Now Section -->
+  <section class="text-center bg-[#d0ecca] p-6 rounded-xl">
+    <h3 class="text-xl font-bold mb-2">Ready to become a Lightbearer?</h3>
+    <p class="mb-4">Join the adventure and help shine God's love to the world!</p>
+    <a href="/enroll" class="inline-block bg-[#4d8845] text-white px-6 py-3 rounded-xl text-lg font-semibold">ENROLL NOW</a>
+  </section>
+</main>
