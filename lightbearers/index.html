@@ -2,38 +2,58 @@ import React from "react";
 
 export default function LightbearersWeek1() {
   return (
-    <div style={{ padding: "2rem", maxWidth: "700px", margin: "0 auto", fontFamily: "'Segoe UI', sans-serif", backgroundColor: "#f6fff5", border: "1px solid #d0ecca", borderRadius: "12px" }}>
-      <h1 style={{ color: "#4d8845", fontSize: "1.8rem", marginBottom: "0.5rem" }}>Lightbearers – Week 1</h1>
-      <p style={{ fontSize: "1.1rem", marginBottom: "2rem" }}>Learning God’s Mercy and Forgiveness</p>
+    <div className="lightbearers-week">
+      <h1>Lightbearers – Week 1</h1>
+      <p><strong>Learning God’s Mercy and Forgiveness</strong></p>
 
       <Section
-        emoji="✝️"
+        emoji="🕯️"
         title="Opening Prayer"
-        content="Dear Jesus, help me to see Your mercy in my life. Thank You for forgiving me and loving me. Amen."
+        content={
+          <p>
+            Dear Jesus, help me to see Your mercy in my life. Thank You for forgiving me and loving me. Amen.
+          </p>
+        }
       />
 
       <Section
         emoji="📖"
         title="Saint of the Week"
-        content={<><strong>St. Thérèse of Lisieux</strong> – She trusted in God's mercy and offered her little acts of love to Jesus every day.</>}
+        content={
+          <p>
+            <strong>St. Thérèse of Lisieux</strong> – She trusted in God's mercy and offered her little acts of love to Jesus every day.
+          </p>
+        }
       />
 
       <Section
         emoji="💡"
         title="Think About This"
-        content="When you make a mistake, do you say sorry to God? How do you know God still loves you?"
+        content={
+          <p>
+            When you make a mistake, do you say sorry to God? How do you know God still loves you?
+          </p>
+        }
       />
 
       <Section
-        emoji="✍️"
+        emoji="🖍️"
         title="Activity"
-        content="Draw or write one way you can show God you're sorry when you mess up — and how He shows you He still loves you."
+        content={
+          <p>
+            Draw or write one way you can show God you're sorry when you mess up — and how He shows you He still loves you.
+          </p>
+        }
       />
 
       <Section
         emoji="🙏"
         title="Closing Prayer"
-        content="Jesus, thank You for forgiving me and loving me every day. Help me to share that love with others. Amen."
+        content={
+          <p>
+            Jesus, thank You for forgiving me and loving me every day. Help me to share that love with others. Amen.
+          </p>
+        }
       />
     </div>
   );
@@ -41,12 +61,11 @@ export default function LightbearersWeek1() {
 
 function Section({ emoji, title, content }) {
   return (
-    <div style={{ marginBottom: "2rem" }}>
-      <h2 style={{ fontSize: "1.2rem", color: "#333", marginBottom: "0.3rem" }}>
-        <span style={{ fontSize: "1.3rem", marginRight: "0.5rem" }}>{emoji}</span>
-        <strong>{title}</strong>
+    <section style={{ marginBottom: "1.5rem" }}>
+      <h2>
+        {emoji} {title}
       </h2>
-      <p style={{ margin: 0, fontSize: "1.05rem", color: "#222" }}>{content}</p>
-    </div>
+      {content}
+    </section>
   );
 }
