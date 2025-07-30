@@ -1,41 +1,52 @@
-// LightbearersWeek1.jsx
-
-import React from 'react';
+import React from "react";
 
 export default function LightbearersWeek1() {
   return (
-    <div className="bg-[#d0ecca] min-h-screen px-4 py-8">
-      <div className="max-w-3xl mx-auto bg-white p-6 rounded-2xl shadow-md">
-        <h1 className="text-3xl font-bold text-center text-[#4d8845] mb-2">Lightbearers - Week 1</h1>
-        <p className="text-center text-gray-700 text-lg mb-6">Learning God’s Mercy and Forgiveness</p>
+    <div style={{ padding: "2rem", maxWidth: "700px", margin: "0 auto", fontFamily: "'Segoe UI', sans-serif", backgroundColor: "#f6fff5", border: "1px solid #d0ecca", borderRadius: "12px" }}>
+      <h1 style={{ color: "#4d8845", fontSize: "1.8rem", marginBottom: "0.5rem" }}>Lightbearers – Week 1</h1>
+      <p style={{ fontSize: "1.1rem", marginBottom: "2rem" }}>Learning God’s Mercy and Forgiveness</p>
 
-        <div className="space-y-6">
-          <div className="border-l-4 border-[#4d8845] pl-4">
-            <h2 className="text-xl font-semibold text-[#607f5b]">🕯️ Opening Prayer</h2>
-            <p className="mt-2 text-gray-800">Dear Jesus, help me to see Your mercy in my life. Thank You for forgiving me and loving me. Amen.</p>
-          </div>
+      <Section
+        emoji="✝️"
+        title="Opening Prayer"
+        content="Dear Jesus, help me to see Your mercy in my life. Thank You for forgiving me and loving me. Amen."
+      />
 
-          <div className="border-l-4 border-[#4d8845] pl-4">
-            <h2 className="text-xl font-semibold text-[#607f5b]">📖 Saint of the Week</h2>
-            <p className="mt-2 text-gray-800"><strong>St. Thérèse of Lisieux</strong> – She trusted in God's mercy and offered her little acts of love to Jesus every day.</p>
-          </div>
+      <Section
+        emoji="📖"
+        title="Saint of the Week"
+        content={<><strong>St. Thérèse of Lisieux</strong> – She trusted in God's mercy and offered her little acts of love to Jesus every day.</>}
+      />
 
-          <div className="border-l-4 border-[#4d8845] pl-4">
-            <h2 className="text-xl font-semibold text-[#607f5b]">💡 Think About This</h2>
-            <p className="mt-2 text-gray-800">When you make a mistake, do you say sorry to God? How do you know God still loves you?</p>
-          </div>
+      <Section
+        emoji="💡"
+        title="Think About This"
+        content="When you make a mistake, do you say sorry to God? How do you know God still loves you?"
+      />
 
-          <div className="border-l-4 border-[#4d8845] pl-4">
-            <h2 className="text-xl font-semibold text-[#607f5b]">✍️ Activity</h2>
-            <p className="mt-2 text-gray-800">Draw or write one way you can show God you're sorry when you mess up — and how He shows you He still loves you.</p>
-          </div>
+      <Section
+        emoji="✍️"
+        title="Activity"
+        content="Draw or write one way you can show God you're sorry when you mess up — and how He shows you He still loves you."
+      />
 
-          <div className="border-l-4 border-[#4d8845] pl-4">
-            <h2 className="text-xl font-semibold text-[#607f5b]">🙏 Closing Prayer</h2>
-            <p className="mt-2 text-gray-800">Jesus, thank You for forgiving me and loving me every day. Help me to share that love with others. Amen.</p>
-          </div>
-        </div>
-      </div>
+      <Section
+        emoji="🙏"
+        title="Closing Prayer"
+        content="Jesus, thank You for forgiving me and loving me every day. Help me to share that love with others. Amen."
+      />
+    </div>
+  );
+}
+
+function Section({ emoji, title, content }) {
+  return (
+    <div style={{ marginBottom: "2rem" }}>
+      <h2 style={{ fontSize: "1.2rem", color: "#333", marginBottom: "0.3rem" }}>
+        <span style={{ fontSize: "1.3rem", marginRight: "0.5rem" }}>{emoji}</span>
+        <strong>{title}</strong>
+      </h2>
+      <p style={{ margin: 0, fontSize: "1.05rem", color: "#222" }}>{content}</p>
     </div>
   );
 }
